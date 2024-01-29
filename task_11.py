@@ -18,8 +18,7 @@ class Dessert:
         else:
             return False
 
-
-dish = Dessert(str(input().lower()), int(input()))
-
-print(dish.is_delicious())
-print(dish.is_healthy())
+if __name__ == "__main__":
+    dish = Dessert(str(input().lower()), int(input()))
+    print(dish.is_delicious())
+    print(dish.is_healthy())

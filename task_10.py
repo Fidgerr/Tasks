@@ -22,8 +22,8 @@ def count_words(string):
     for i in range(len(words)):
         if words[i] not in my_dict:
             my_dict[words[i]] = string.count(f'{words[i]} ') + string.count(f' {words[i]}') - string.count(f' {words[i]} ')
-    print(my_dict)
+    return my_dict
 
 
-count_words("A man, a plan, a canal -- Panama")
-count_words("Doo bee doo bee doo")
+print(count_words("A man, a plan, a canal -- Panama"))
+print(count_words("Doo bee doo bee doo"))

@@ -10,13 +10,6 @@ def max_odd(array):
             maxx_odd = a[j]
             count += 1
     if count > 0:
-        print(maxx_odd)
+        return maxx_odd
     else:
-        print(None)
-
-
-max_odd([1, 2, 3, 4, 4])
-max_odd([21.0, 2, 3, 4, 4])
-max_odd(['ololo', 2, 3, 4, [1, 2], None])
-max_odd(['ololo', 'fufufu'])
-max_odd([2, 2, 4])
+        return None

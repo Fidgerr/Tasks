@@ -15,11 +15,6 @@ def coincidence(list1=None, range1=None):
                 a.append(list1[i])
             else:
                 a = a
-        print(sorted(a))
+        return sorted(a)
     else:
-        print(a)
-
-
-coincidence([1, 2, 3, 4, 5], range(3, 6))
-coincidence()
-coincidence([None, 1, 'foo', 4, 2, 2.5], range(1, 4))
+        return a

@@ -23,9 +23,4 @@ def connect_dicts(dict1, dict2):
                 if key not in my_dict:
                     my_dict[key] = value
     sorted_dict = dict(sorted(my_dict.items(), reverse=True))
-    print(sorted_dict)
-
-
-connect_dicts({"a": 2, "b": 12}, {"c": 11, "e": 5})
-connect_dicts({"a": 13, "b": 9, "d": 11}, {"c": 12, "a": 15})
-connect_dicts({"a": 14, "b": 12}, {"c": 11, "a": 15})
+    return sorted_dict

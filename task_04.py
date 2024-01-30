@@ -4,7 +4,7 @@ def sort_list(list):
     max_el = 0
     max_counter = 0
     if len(list) == 0:
-        print(list)
+        return list
     else:
         for i in range(len(list)):
             if min_el > list[i] > max_el:
@@ -24,10 +24,4 @@ def sort_list(list):
         list[min_counter] = max_el
         list[max_counter] = min_el
         list.append(min_el)
-        print(list)
-
-
-sort_list([])
-sort_list([2, 4, 6, 8])
-sort_list([1])
-sort_list([1, 2, 1, 3])
+        return list

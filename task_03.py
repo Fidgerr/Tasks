@@ -12,7 +12,7 @@ def max_odd(array):
     if count > 0:
         print(maxx_odd)
     else:
-        print("None")
+        print(None)
 
 
 max_odd([1, 2, 3, 4, 4])

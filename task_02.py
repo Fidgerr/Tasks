@@ -15,9 +15,9 @@ def coincidence(list1=None, range1=None):
                 a.append(list1[i])
             else:
                 a = a
-        print(sorted(a), '\n')
+        print(sorted(a))
     else:
-        print(a, '\n')
+        print(a)
 
 
 coincidence([1, 2, 3, 4, 5], range(3, 6))

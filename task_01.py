@@ -9,9 +9,9 @@ def is_palindrome(string):
     string = string.replace(".", '')
     string = string.replace("_", '')
     if string == string[::-1]:
-        print('True')
+        print(True)
     else:
-        print('False')
+        print(False)
 
 
 is_palindrome("A man, a plan, a canal -- Panama")

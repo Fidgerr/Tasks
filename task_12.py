@@ -11,7 +11,3 @@ class JellyBean(Dessert):
             return False
         else:
             return True
-
-
-dessert = JellyBean()
-print(dessert.is_healthy(), dessert.is_delicious())

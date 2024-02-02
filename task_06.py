@@ -31,3 +31,9 @@ def rps_game_winner(array):
                     return a
         else:
             return 'NoSuchStrategyError'
+
+
+print(rps_game_winner([['player1', 'P'], ['player2', 'S'], ['player3', 'S']]))
+print(rps_game_winner([['player1', 'P'], ['player2', 'A']]))
+print(rps_game_winner([['player1', 'P'], ['player2', 'S']]))
+print(rps_game_winner([['player1', 'P'], ['player2', 'P']]))

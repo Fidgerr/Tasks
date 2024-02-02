@@ -1,7 +1,7 @@
 class Dessert:
     def __init__(self, name=None, calories=None):
         self.name = name
-        self.calories = int(calories)
+        self.calories = calories
 
     def is_healthy(self):
         if self.calories < 200:

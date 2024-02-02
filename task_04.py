@@ -21,7 +21,16 @@ def sort_list(list):
             else:
                 min_el = min_el
                 max_el = max_el
-        list[min_counter] = max_el
-        list[max_counter] = min_el
+        for i in range(len(list)):
+            if list[i] == min_el:
+                list[i] = max_el
+            elif list[i] == max_el:
+                list[i] = min_el
         list.append(min_el)
         return list
+
+
+print(sort_list([]))
+print(sort_list([2, 4, 6, 8]))
+print(sort_list([1]))
+print(sort_list([1, 2, 1, 3]))

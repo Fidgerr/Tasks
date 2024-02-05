@@ -11,3 +11,11 @@ class JellyBean(Dessert):
             return False
         else:
             return True
+
+
+dessert = JellyBean()
+print(dessert.name)
+print(dessert.calories)
+print(dessert.is_delicious())
+print(dessert.flavor)
+print(dessert.is_healthy())

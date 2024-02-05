@@ -23,7 +23,3 @@ def count_words(string):
         if words[i] not in my_dict:
             my_dict[words[i]] = string.count(f'{words[i]} ') + string.count(f' {words[i]}') - string.count(f' {words[i]} ')
     return my_dict
-
-
-print(count_words("A man, a plan, a canal -- Panama"))
-print(count_words("Doo bee doo bee doo"))

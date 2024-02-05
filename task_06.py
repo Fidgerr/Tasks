@@ -1,7 +1,7 @@
 def rps_game_winner(array):
     strategy = ['R', 'P', 'S']
     if len(array) != 2:
-        return 'WrongNumberOfPlayersError'
+        raise Exception('WrongNumberOfPlayersError')
     else:
         p1 = array[0]
         p2 = array[1]
@@ -30,10 +30,4 @@ def rps_game_winner(array):
                     a += p2[0] + ' ' + p2[1]
                     return a
         else:
-            return 'NoSuchStrategyError'
-
-
-print(rps_game_winner([['player1', 'P'], ['player2', 'S'], ['player3', 'S']]))
-print(rps_game_winner([['player1', 'P'], ['player2', 'A']]))
-print(rps_game_winner([['player1', 'P'], ['player2', 'S']]))
-print(rps_game_winner([['player1', 'P'], ['player2', 'P']]))
+            raise Exception('NoSuchStrategyError')

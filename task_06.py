@@ -1,3 +1,12 @@
+
+class WrongNumberOfPlayersError(Exception):
+    pass
+
+
+class NoSuchStrategyError(Exception):
+    pass
+
+
 def rps_game_winner(array):
     strategy = ['R', 'P', 'S']
     if len(array) != 2:
@@ -31,11 +40,3 @@ def rps_game_winner(array):
                     return a
         else:
             raise NoSuchStrategyError()
-
-
-class WrongNumberOfPlayersError(Exception):
-    pass
-
-
-class NoSuchStrategyError(Exception):
-    pass
